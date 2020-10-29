@@ -32,7 +32,7 @@
 			        {% if post in liked_post %}
 			            <a href="{% url 'post-like' %}" style="color:red;" id="likebtn{{ post.id }}"> Unlike</a> | {{post.likes.count}}
 			        {% else %}
-			            <a href="{% url 'post-like' %}" style="color:green;" id="likebtn{{ post.id }}"> Like</a> | {{post.likes.count}}
+			            <a href="{% url 'post-like' %}" style="color:blue;" id="likebtn{{ post.id }}"> Like</a> | {{post.likes.count}}
 			        {% endif %}
 			    </button>
 	          	<a class="btn btn-outline-info" href="{% url 'post-detail' post.id %}">Comments | {{ post.details.count }}</a>
